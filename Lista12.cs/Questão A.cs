@@ -10,7 +10,6 @@ class Program
         {
             Console.WriteLine(num);
         }
-        
         Console.ReadKey();
     }
 }
