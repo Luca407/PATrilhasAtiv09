@@ -1,6 +1,5 @@
 using System;
 
-
 class Retangulo
 {
     public double Largura { get; set; }
@@ -12,6 +11,22 @@ class Retangulo
         Altura = altura;
     }
 
-    public double CalcularArea() => Largura * Altura;
-    public double CalcularPerimetro() => 2 * (Largura + Altura);
+    public double CalcularArea() 
+    {
+        return Largura * Altura;
+    }
+    
+    public double CalcularPerimetro() 
+    {
+        return 2 * (Largura + Altura);
+    }
+    
+    static void Main()
+    {
+        // Testando a classe Retangulo
+        Retangulo ret = new Retangulo(5, 10);
+        Console.WriteLine("Área do retângulo: " + ret.CalcularArea());
+        Console.WriteLine("Perímetro do retângulo: " + ret.CalcularPerimetro());
+        Console.ReadKey();
+    }
 }
